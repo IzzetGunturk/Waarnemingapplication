@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Maptalks -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.css">
+    <script src="https://kit.fontawesome.com/d8ae1e9b38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Waarneming group</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div id="headerInner">
+            <img src="./src/img/logo.png" alt="logo" width="70">
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Dropdown -->
+    <div id="mainContent">
+        <div id="dropdown-container">
+
+            <div id="dropdownBtn">
+                <button class="btn-dropdown">Filter op data <i class="fas fa-chevron-right"></i></button>
+                <br>
+                <div class="searchDiv">
+                    <div class="searchBar">
+                        <input type="text" id="inputValue" class="searchTerm" placeholder="Zoeken...">
+                        <button type="submit" class="searchButton" onclick="inputValue()">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-subcontainer sub-1">
+                <ul>
+                    <li>Fysiek</li>
+                    <li>Sociaal</li>
+                    <li>Veiligheid</li>
+                </ul>
+                <div class="checkbox-custom">
+                    <input type="radio" name="radio" id="check-1" value="1" class="check-box">
+                    <input type="radio" name="radio" id="check-2" value="2" class="check-box">
+                    <input type="radio" name="radio" id="check-3" value="3" class="check-box">
+                </div>
+            </div>
+
+            <div class="dropdown-subcontainer sub-2">
+                <ul>
+                    <li>Winkels</li>
+                    <li>OV</li>
+                    <li>Ziekenhuis</li>
+                    <li>Recreatie</li>
+                    <li>Scholen</li>
+                    <li>Horeca</li>
+                </ul>
+                <div class="checkbox-custom">
+                    <input type="checkbox" id="myCheck" class="check-box" onclick="CheckBoxFilter()">
+                    <input type="checkbox" id="myCheck2" class="check-box" onclick="CheckBoxFilter()">
+                    <input type="checkbox" id="myCheck3" class="check-box" onclick="CheckBoxFilter()">
+                    <input type="checkbox" id="myCheck4" class="check-box" onclick="CheckBoxFilter()">
+                    <input type="checkbox" id="myCheck5" class="check-box" onclick="CheckBoxFilter()">
+                    <input type="checkbox" id="myCheck6" class="check-box" onclick="CheckBoxFilter()">
+                </div>
+            </div>
+
+            <div class="dropdown-subcontainer sub-3">
+                <ul>
+                    <li>Buurthuizen</li>
+                    <li>Parken</li>
+                    <li>Speeltuinen</li>
+                    <li>Sport</li>
+                </ul>
+                <div class="checkbox-custom">
+                    <input type="checkbox" id="myCheck7" onclick="CheckBoxFilter2()">
+                    <input type="checkbox" id="myCheck8" onclick="CheckBoxFilter2()">
+                    <input type="checkbox" id="myCheck9" onclick="CheckBoxFilter2()">
+                    <input type="checkbox" id="myCheck10" onclick="CheckBoxFilter2()">
+                </div>
+            </div>
+        </div>
+        <!-- Dropdown -->
+
+        <div id="mapContainer">
+            <div id="map" class="container"></div>
+            <div id="legenda">
+                <h2 class="h2Legenda">Legenda</h2>
+
+                <div id="legendaSub">
+
+
+                    <div id="legendaCards" class="standaardLegenda">
+                        Selecteer uw keuze
+                    </div>
+
+                    <div id="legendaCards" class="fysiekLegenda hideLegenda">
+                        <div class="legendaItem"><img src="src/icons/Scholen.png" style="width: 17px;">&nbsp;Scholen
+                        </div>
+                        <div class="legendaItem"><img src="src/icons/Horeca.png" style="width: 17px;">&nbsp;Horeca</div>
+                        <h1 id="kopje" style="text-align: left;">Winkels:</h1>
+                        <div class="legendaItem"><img src="src/icons/Supermarkt.png"
+                                style="width: 17px;">&nbsp;Supermarkt</div>
+                        <div class="legendaItem"><img src="src/icons/Kleding.png" style="width: 17px;">&nbsp;Kleding
+                        </div>
+                        <div class="legendaItem"><img src="src/icons/Overig.png" style="width: 17px;">&nbsp;Overig</div>
+                        <h1 id="kopje" style="text-align: left;">OV:</h1>
+                        <div class="legendaItem"><img src="src/icons/Trein.png" style="width: 17px;">&nbsp;Trein</div>
+                        <div class="legendaItem"><img src="src/icons/Bus.png" style="width: 17px;">&nbsp;Bus</div>
+                        <h1 id="kopje" style="text-align: left;">Ziekenhuis:</h1>
+                        <div class="legendaItem"><img src="src/icons/Ziekenhuis.png"
+                                style="width: 17px;">&nbsp;Ziekenhuis</div>
+                        <div class="legendaItem"><img src="src/icons/Apotheek.png" style="width: 17px;">&nbsp;Apotheek
+                        </div>
+                        <h1 id="kopje" style="text-align: left;">Recreatie:</h1>
+                        <div class="legendaItem"><img src="src/icons/Museum.png" style="width: 17px;">&nbsp;Museum</div>
+                    </div>
+
+                    <div id="legendaCards" class="sociaalLegenda hideLegenda">
+                        <div class="legendaItem"><img src="src/icons/Buurthuis.png"
+                                style="width: 17px;">&nbsp;Buurthuizen</div>
+                        <div class="legendaItem"><img src="src/icons/Parken.png" style="width: 17px;">&nbsp;Parken</div>
+                        <div class="legendaItem"><img src="src/icons/Speeltuinen.png"
+                                style="width: 17px;">&nbsp;Speeltuinen</div>
+                        <h1 id="kopje" style="text-align: left;">Sport:</h1>
+                        <div class="legendaItem"><img src="src/icons/Voetbalveldjes.png"
+                                style="width: 17px;">&nbsp;Voetbalveldjes</div>
+                        <div class="legendaItem"><img src="src/icons/Basketbalveldjes.png"
+                                style="width: 17px;">&nbsp;Basketbalveldjes</div>
+                    </div>
+
+
+                    <div id="legendaCards" class="veiligheidLegenda hideLegenda">
+                        <div class="legendaItem">
+                            <div class="veiligheidIndicator v1"></div>&nbsp;< 10</div> <div class="legendaItem">
+                                <div class="veiligheidIndicator v2"></div>&nbsp;10 - 20
+                        </div>
+                        <div class="legendaItem">
+                            <div class="veiligheidIndicator v3"></div>&nbsp;20 - 40
+                        </div>
+                        <div class="legendaItem">
+                            <div class="veiligheidIndicator v4"></div>&nbsp;40 - 80
+                        </div>
+                        <div class="legendaItem">
+                            <div class="veiligheidIndicator v5"></div>&nbsp;> 80
+                        </div>
+                        <div class="legendaItem legendaItemLast"> Gemiddelde aantal woning inbraken per week </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p class="copyrightText">© 2023 Copyright: <a href="./index.html" class="linkFooter">Izzet Güntürk</a></p>
+    </div>
+    <!-- Copyright -->
+    </footer>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.min.js"></script>
+<script src="js/maptalks.heatmap.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="js/search.js"></script>
+<script src="js/loadMap.js"></script>
+<script src="js/test.js"></script>
+<script src="js/fysiekFilter.js"></script>
+<script src="js/sociaalFilter.js"></script>
+<script src="js/main.js"></script>
+
+</html>

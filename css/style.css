@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* BODY */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #05C3DE;
+}
+
+/* BODY */
+
+
+/* HEADER */
+#header {
+    width: 100%;
+    height: 100px;
+    background: #007BA7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#headerInner {
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* HEADER */
+
+#mainContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 1050px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* DROPDOWN MENU*/
+
+#dropdown-container {
+    position: absolute;
+    width: 535px;
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 60px;
+    color: white;
+    z-index: 10;
+}
+
+.sub-1,
+.sub-2,
+.sub-3 {
+    visibility: hidden;
+}
+
+.fa-search {
+    margin-right: 10px;
+}
+
+.dropdown-subcontainer {
+    background: #007BA7;
+    width: 180px;
+    box-shadow: 5px 11px 14px -11px rgba(0, 0, 0, 0.45);
+}
+
+.btn-search {
+    box-shadow: 5px 11px 14px -11px rgba(0, 0, 0, 0.45);
+    width: 155px;
+    color: white;
+    height: 33px;
+    background: #D2D2D2;
+    color: #888888;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: text;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sub-1 {
+    height: 85.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkbox-custom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-dropdown {
+    box-shadow: 5px 11px 14px -11px rgba(0, 0, 0, 0.45);
+    font-family: 'Montserrat', sans-serif;
+    background: #007BA7;
+    width: 155px;
+    color: white;
+    cursor: pointer;
+    height: 33px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* DROPDOWN */
+
+
+/* MAPTALKS */
+.container {
+    position: absolute;
+    width: 850px;
+    height: 448px;
+    margin: 0 auto;
+    z-index: 5;
+    float: left;
+}
+
+#kopje {
+    font-size: 13px;
+    color: white;
+}
+
+
+.veiligheidIndicator {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.v1 {
+    background: #00FF00;
+}
+
+.v2 {
+    background: #02A702;
+}
+
+.v3 {
+    background: #FFFF33;
+}
+
+.v4 {
+    background: #FFD000;
+}
+
+.v5 {
+    background: #FF3333;
+}
+
+#legenda {
+    width: 200px;
+    height: 448px;
+    background: #007BA7;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.fysiekLegenda {
+    display: none;
+    visibility: hidden;
+}
+
+.sociaalLegenda {
+    display: none;
+    visibility: hidden;
+}
+
+.veiligheidLegenda {
+    display: none;
+    visibility: hidden;
+}
+
+#legenda::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#legenda::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+#legenda::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #05C3DE;
+}
+
+#legendaSub {
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#legendaCards {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.legendaItem {
+    width: 175px;
+    height: 20px;
+    border-radius: 5px;
+    background: #05C3DE;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.legendaItemLast {
+    height: 75px;
+    width: 165px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#mapContainer {
+    width: 1050px;
+    height: 448px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    height: 33px;
+    align-items: center;
+}
+
+.searchTerm {
+    width: 100%;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+    color: #888888;
+    background-color: #D2D2D2;
+
+}
+
+.searchTerm:focus {
+    color: #888888;
+}
+
+.searchButton {
+    width: 40px;
+    height: 33px;
+    background: #D2D2D2;
+    text-align: center;
+    color: #888888;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+    border: none;
+}
+
+.searchButton:hover {
+    color: #D2D2D2;
+    background: #888888;
+    transition: 0.5s;
+}
+
+
+.searchButton i {
+    margin: 0 auto;
+}
+
+.searchDiv {
+    width: 80%;
+    width: 155px;
+    color: white;
+    height: 33px;
+    background: #D2D2D2;
+    color: #888888;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: text;
+    box-shadow: 5px 11px 14px -11px rgba(0, 0, 0, 0.45);
+
+}
+
+.searchDiv input {
+    border: none;
+    transition: 0.5s;
+}
+
+/* MAPTALKS */
+
+/* FOOTER */
+.copyright {
+    background-color: #007BA7;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.linkFooter {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+    #mainContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Dropdown */
+
+    #dropdown-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        position: static;
+        align-items: center;
+    }
+
+    .dropdown-subcontainer {
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .iconResponsive {
+        display: none;
+    }
+
+    .dropdown-sub-left {
+        display: none;
+    }
+
+    #dropdownBtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Einde dropdown */
+
+    #mapContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: static;
+    }
+
+    #legenda {
+        position: static;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    #legenda h2 {
+        display: none;
+    }
+
+    #legendaSub {
+        height: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        width: 100%;
+        position: static;
+    }
+}
