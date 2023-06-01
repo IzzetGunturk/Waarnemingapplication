@@ -1,6 +1,6 @@
 # 🗺️ Waarneming application
 
-I programmed together with 2 groupmembers a look a like google maps for waarneming.nl
+I programmed together with 2 groupmembers a look a like og Google Maps for waarneming.nl
 
 ## 🛠️ Technologies
 
