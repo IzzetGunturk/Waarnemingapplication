@@ -51,46 +51,46 @@ function AddWinkels() {
 
 // functies voor de "ov" src/icons. In de functie zijn de parameters longitude, latitude, symbol en layer ingevuld.
 function AddOv() {
-  AddMarker(5.480401868826009, 51.44384014687145, 'src/icons/Trein.png', layer, 'lorem','lorem') // centraal station
-  AddMarker(5.456186587581019, 51.45142972826563, 'src/icons/Trein.png', layer, 'lorem','lorem') // strijp-s
-  AddMarker(5.478847520380434, 51.443649751055425, 'src/icons/Bus.png', layer, 'lorem','lorem') // centraal 
-  AddMarker(5.483091439389403, 51.45122507647685, 'src/icons/Bus.png', layer, 'lorem','lorem') // TU eindhoven
+  AddMarker(5.480401868826009, 51.44384014687145, 'src/icons/Trein.png', layer, 'lorem ipsum','lorem ipsum') // centraal station
+  AddMarker(5.456186587581019, 51.45142972826563, 'src/icons/Trein.png', layer, 'lorem ipsum','lorem ipsum') // strijp-s
+  AddMarker(5.478847520380434, 51.443649751055425, 'src/icons/Bus.png', layer, 'lorem ipsum','lorem ipsum') // centraal 
+  AddMarker(5.483091439389403, 51.45122507647685, 'src/icons/Bus.png', layer, 'lorem ipsum','lorem ipsum') // TU eindhoven
 }
 
 // functies voor de "ziekenhuis" src/icons. In de functie zijn de parameters longitude, latitude, symbol en layer ingevuld.
 function AddZiekenhuis() {
-  AddMarker(5.488152231049541, 51.45663015769242, 'src/icons/Ziekenhuis.png', layer, 'lorem','lorem') // maxima zh
-  AddMarker(5.471671472373465, 51.46654116298747, 'src/icons/Ziekenhuis.png', layer, 'lorem','lorem') // catharina zh
-  AddMarker(5.477854657979684, 51.41903454443168, 'src/icons/Ziekenhuis.png', layer, 'lorem','lorem') // anna zh
-  AddMarker(5.483459068570455, 51.433534146652185, 'src/icons/Apotheek.png', layer, 'lorem','lorem') // stratumse apotheek
-  AddMarker(5.472618725245773, 51.4352496345117, 'src/icons/Apotheek.png', layer), 'lorem','lorem' // apotheek keyzer 
-  AddMarker(5.501637490453382, 51.44315044384707, 'src/icons/Apotheek.png', layer, 'lorem','lorem') // service apotheek
-  AddMarker(5.454607077875534, 51.44190303849575, 'src/icons/Apotheek.png', layer, 'lorem','lorem') // apotheek trudolein
-  AddMarker(5.467949038890526, 51.45260882559041, 'src/icons/Apotheek.png', layer, 'lorem','lorem') // apotheek nijpels
+  AddMarker(5.488152231049541, 51.45663015769242, 'src/icons/Ziekenhuis.png', layer, 'lorem ipsum','lorem ipsum') // maxima zh
+  AddMarker(5.471671472373465, 51.46654116298747, 'src/icons/Ziekenhuis.png', layer, 'lorem ipsum','lorem ipsum') // catharina zh
+  AddMarker(5.477854657979684, 51.41903454443168, 'src/icons/Ziekenhuis.png', layer, 'lorem ipsum','lorem ipsum') // anna zh
+  AddMarker(5.483459068570455, 51.433534146652185, 'src/icons/Apotheek.png', layer, 'lorem ipsum','lorem ipsum') // stratumse apotheek
+  AddMarker(5.472618725245773, 51.4352496345117, 'src/icons/Apotheek.png', layer), 'lorem ipsum','lorem ipsum' // apotheek keyzer 
+  AddMarker(5.501637490453382, 51.44315044384707, 'src/icons/Apotheek.png', layer, 'lorem ipsum','lorem ipsum') // service apotheek
+  AddMarker(5.454607077875534, 51.44190303849575, 'src/icons/Apotheek.png', layer, 'lorem ipsum','lorem ipsum') // apotheek trudolein
+  AddMarker(5.467949038890526, 51.45260882559041, 'src/icons/Apotheek.png', layer, 'lorem ipsum','lorem ipsum') // apotheek nijpels
   
 }
 
 // functies voor de "recreactie" src/icons. In de functie zijn de parameters longitude, latitude, symbol en layer ingevuld.
 function AddRecreatie() {
-  AddMarker(5.475673850420015, 51.44005117013238, 'src/icons/Museum.png', layer, 'lorem','lorem') // philips museum
-  AddMarker(5.490210436109491, 51.43781379790111, 'src/icons/Museum.png', layer, 'lorem','lorem') // DAF museum
-  AddMarker(5.468914038967708, 51.44169184011416, 'src/icons/Museum.png', layer, 'lorem','lorem') // psv museum
+  AddMarker(5.475673850420015, 51.44005117013238, 'src/icons/Museum.png', layer, 'lorem ipsum','lorem ipsum') // philips museum
+  AddMarker(5.490210436109491, 51.43781379790111, 'src/icons/Museum.png', layer, 'lorem ipsum','lorem ipsum') // DAF museum
+  AddMarker(5.468914038967708, 51.44169184011416, 'src/icons/Museum.png', layer, 'lorem ipsum','lorem ipsum') // psv museum
 }
 
 // functies voor de "scholen" src/icons. In de functie zijn de parameters longitude, latitude, symbol en layer ingevuld.
 function AddScholen() {
-  AddMarker(5.479037518310364, 51.45178569809452, 'src/icons/Scholen.png', layer, 'lorem','lorem') // Fontys R
-  AddMarker(5.472548239387291, 51.44697105969571, 'src/icons/Scholen.png', layer, 'lorem','lorem') // BS fellenoord
-  AddMarker(5.490725527011629, 51.44874350714372, 'src/icons/Scholen.png', layer, 'lorem','lorem') // TU
-  AddMarker(5.46007313008471, 51.443794003621576, 'src/icons/Scholen.png', layer, 'lorem','lorem') // Technische lyceum EHV
+  AddMarker(5.479037518310364, 51.45178569809452, 'src/icons/Scholen.png', layer, 'lorem ipsum','lorem ipsum') // Fontys R
+  AddMarker(5.472548239387291, 51.44697105969571, 'src/icons/Scholen.png', layer, 'lorem ipsum','lorem ipsum') // BS fellenoord
+  AddMarker(5.490725527011629, 51.44874350714372, 'src/icons/Scholen.png', layer, 'lorem ipsum','lorem ipsum') // TU
+  AddMarker(5.46007313008471, 51.443794003621576, 'src/icons/Scholen.png', layer, 'lorem ipsum','lorem ipsum') // Technische lyceum EHV
 }
 
 // functies voor de "horeca" src/icons. In de functie zijn de parameters longitude, latitude, symbol en layer ingevuld.
 function AddHoreca() {
-  AddMarker(5.478459813686935, 51.44022104311986, 'src/icons/Horeca.png', layer, 'lorem','lorem') // rest. Zoet
-  AddMarker(5.479276222408843, 51.44349942772351, 'src/icons/Horeca.png', layer, 'lorem','lorem') // Julia's eindje
-  AddMarker(5.476160103835504, 51.44232965383042, 'src/icons/Horeca.png', layer, 'lorem','lorem') // Dinner in motion
-  AddMarker(5.459861457202391, 51.44381951457911, 'src/icons/Horeca.png', layer, 'lorem','lorem') // loetje
+  AddMarker(5.478459813686935, 51.44022104311986, 'src/icons/Horeca.png', layer, 'lorem ipsum','lorem ipsum') // rest. Zoet
+  AddMarker(5.479276222408843, 51.44349942772351, 'src/icons/Horeca.png', layer, 'lorem ipsum','lorem ipsum') // Julia's eindje
+  AddMarker(5.476160103835504, 51.44232965383042, 'src/icons/Horeca.png', layer, 'lorem ipsum','lorem ipsum') // Dinner in motion
+  AddMarker(5.459861457202391, 51.44381951457911, 'src/icons/Horeca.png', layer, 'lorem ipsum','lorem ipsum') // loetje
 }
 
 // variabelen gemaakt van de 6 checkbox
