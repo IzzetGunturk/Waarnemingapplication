@@ -9,6 +9,7 @@ I programmed together with 2 groupmembers a look a like of Google Maps for waarn
 - Javascript
 - jQuery
 - Maptalks API
+- PWA
 
 ## Start application
 
